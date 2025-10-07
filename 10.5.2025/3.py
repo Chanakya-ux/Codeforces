@@ -23,5 +23,10 @@ for _ in range(int(input())):
     c = list(map(int,input().split()))
     for _ in range(q):
         l , r = map(int,input().split())
-        C = c[l-1:r+1]
+        while(c):
+            map0=df(find_0s(c))
+            map1=df(find_1s(c))
+            map0 = sorted(map0,key= lambda x: x[1])
+            map1 = sorted(map1,key= lambda x: x[1])
+            for p in 
 
